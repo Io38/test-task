@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import {compose} from "redux";
 import {connect} from "react-redux";
 import {createComment, deletePost, getPost, setNewCommentText, updatePost} from "../../redux/post-reducer";
-import {withRouter} from "react-router-dom";
+import {NavLink, withRouter} from "react-router-dom";
 import Post from "./Post";
 
 
@@ -17,7 +17,7 @@ const PostsContainer = (props) => {
 
 
     return (<>
-
+            <div className='allposts'><NavLink to='/allposts'>BACK TO POSTS</NavLink></div>
             {props.id ? <Post {...props}/> : <h1>There is no such a post right now</h1>}
         </>
     )

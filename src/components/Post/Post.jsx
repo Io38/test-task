@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {deletePost} from "../../redux/post-reducer";
 import AddComment from "./AddComment";
+import {NavLink} from "react-router-dom";
 
 const Post = (props) => {
 

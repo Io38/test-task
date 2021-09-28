@@ -8,7 +8,7 @@ function App() {
     return (
         <div className="App">
 
-            <div className='allposts'><NavLink to='/allposts'>BACK TO POSTS</NavLink></div>
+
 
             <Route exact path="/allposts"
                    render={()=> <PostsContainer/>}/>
